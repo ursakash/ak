@@ -10,11 +10,12 @@
 <h1> Akash Maurya's Cuber App</h1>
 
   <input id="myInput" type="number" placeholder="Enter a number ...">
-  
+  <br/>
   <button id="square"  onclick="mySquare()">x<sup>2</sup></button>
   <button id="cube" onclick="myCube()">x<sup>3</sup></button>
   <button id="prime" onclick="myPrime()">Prime</button>
   <button id="factorial" onclick="myFactorial()">x!</button>
+  <button id="clear" onclick="clear()">clear</button>
   
 	 <h1 id="output"></h1>
 <!--   <script type="text/javascript" src="./script.js"></script> -->
@@ -91,6 +92,14 @@ fact = fact*i;
 output.innerText=`${f}! = ${fact}`
 input.value='';
 }	  
+
+
+function clear(){
+input.value=''
+output.innerText=''
+}
+
+
 	</script>
 	
 	
@@ -100,7 +109,11 @@ input.value='';
 	  
 	    background-color: hotpink;
 	  }
-	  
+	  #clear{
+background-color: red;
+	  }
+
+}
 	  
 	</style>
 	
