@@ -13,8 +13,8 @@
   
   <button id="square"  onclick="mySquare()">x<sup>2</sup></button>
   <button id="cube" onclick="myCube()">x<sup>3</sup></button>
-  <!--<button id="prime">Prime</button>
-  <button id="factorial">x!</button>--->
+  <button id="prime" onclick="myPrime()">Prime</button>
+  <!---<button id="factorial">x!</button>--->
   
 	 <h1 id="output"></h1>
 <!--   <script type="text/javascript" src="./script.js"></script> -->
@@ -50,6 +50,33 @@ input.value=''
 
 	  
 	  }
+
+function myPrime(){
+let p = parseInt(input.value);
+let count=0;
+if(p>2 && p%2==0){
+output.innText=`${p} is not a prime number`
+}
+else{
+for(let i =2;i<p;++i){
+if(p%i==0){
+++count;
+}
+
+}
+
+if(count==0) {
+
+output.innText=`${p} is  a prime number`
+}
+else{
+output.innText=`${p} is not a prime number`
+
+}
+}
+}
+
+
 	  
 	</script>
 	
